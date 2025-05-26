@@ -10,6 +10,7 @@ import "swiper/css/scrollbar";
 import { MdLocalHospital } from "react-icons/md";
 import Link from "next/link";
 import {
+  FaClock,
   FaMedal,
   FaRegCalendarAlt,
   FaShieldAlt,
@@ -19,6 +20,10 @@ import { HiBadgeCheck } from "react-icons/hi";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaLocationDot } from "react-icons/fa6";
+import { contactInformation } from "@/data/data";
+import { IoCall, IoLogoWhatsapp } from "react-icons/io5";
+import { CiClock2 } from "react-icons/ci";
 
 function HeaderSwiper() {
   useEffect(() => {
@@ -30,13 +35,14 @@ function HeaderSwiper() {
         <SwiperSlide>
           <div className="bg-[linear-gradient(to_right_top,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('/pic1.jpg')] bg-center bg-cover lg:min-h-screen w-full flex flex-col justify-start items-start pt-36 lg:pt-64 pb-8 lg:pb-0">
             <div className="px-2 lg:px-12 xl:px-36" data-aos="fade-left">
-              <h1 className="text-white text-2xl lg:text-5xl font-bold w-full lg:w-8/12 tracking-tighter">
-                Compassionate Care and Advanced Medicine, Every Step of the Way
+              <h1 className="text-white text-2xl lg:text-5xl font-bold w-full tracking-tighter">
+                Your Health, Our Priority
               </h1>
               <p className="text-sm lg:text-lg py-8 text-white">
                 Expert care, modern technology, and a compassionate team — all
                 in one place.
               </p>
+
               <div className="flex flex-col lg:flex-row justify-start items-start gap-4 lg:gap-8">
                 <Link
                   href={"/#our_services"}
@@ -52,6 +58,29 @@ function HeaderSwiper() {
                   <FaRegCalendarAlt className="text-lg" />
                   Book an Appointment
                 </Link>
+              </div>
+
+              <div className=" mt-2 py-3 backdrop-blur-md px-2">
+                <p className="text-white flex justify-start items-center gap-2 italic text-sm">
+                  <FaLocationDot /> {contactInformation?.at(0)?.address}
+                </p>
+                <Link
+                  href={`https://wa.me/${contactInformation?.at(0)?.whatsapp}`}
+                  target="_blank"
+                  className="text-white flex justify-start items-center gap-2 italic text-sm mt-2"
+                >
+                  <IoLogoWhatsapp /> {contactInformation?.at(0)?.whatsapp}
+                </Link>
+                <Link
+                  href={`tel:${contactInformation?.at(0)?.phone1!}`}
+                  target="blank"
+                  className="text-white flex justify-start items-center gap-2 italic text-sm mt-2"
+                >
+                  <IoCall /> {contactInformation?.at(0)?.phone1}
+                </Link>
+                <p className="text-white flex justify-start items-center gap-2 italic text-sm mt-2">
+                  <FaClock /> {contactInformation?.at(0)?.openingHours}
+                </p>
               </div>
             </div>
 

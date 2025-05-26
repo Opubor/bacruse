@@ -19,19 +19,19 @@ export default function Home() {
 
       <OurServices />
 
+      <BookAnAppointment />
+
+      <ContactUs />
+
       <Staffs />
 
       <AboutUs />
-
-      <BookAnAppointment />
 
       <WhyChooseUs />
 
       <Gallery />
 
       <Blog />
-
-      <ContactUs />
 
       <Footer />
     </div>

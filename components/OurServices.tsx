@@ -24,32 +24,32 @@ function OurServices() {
         journey.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 lg:gap-4 pt-8">
+      <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-1 lg:gap-4 pt-8">
         {services?.map((data) => (
           <div
             key={data?.id}
             style={{
-              backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${data.backgroundPicture})`,
+              backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${data.backgroundPicture})`,
             }}
-            className={`p-6 flex flex-col items-center justify-center bg-center bg-cover shadow-lg shadow-gray-400`}
+            className={`p-2 lg:p-6 flex flex-col items-center justify-start bg-center bg-cover shadow-lg shadow-gray-400 bg-white`}
           >
             <div className="p-6 bg-white rounded-full">
               <FaStethoscope className="text-darkblue" />
             </div>
 
-            <h1 className="bg-darkblue text-sm md:text-md lg:text-xl font-semibold tracking-tight text-white px-8 py-2 my-2">
+            <h1 className="text-darkblue bg-white my-2 text-sm md:text-md lg:text-xl lg:font-semibold lg:tracking-tight p-2 rounded-sm text-center">
               {data?.service}
             </h1>
 
-            <p className="text-sm text-white text-center">
+            {/* <p className="text-sm text-center text-white">
               {data?.description}
-            </p>
+            </p> */}
 
             <div
               onClick={() => {
                 setOpenModal(true), setServiceId(data?.id);
               }}
-              className="bg-white hover:bg-darkblue hover:text-white cursor-pointer text-xs text-darkblue py-3 px-12 mt-4 rounded-lg border border-darkblue"
+              className="bg-darkblue hover:bg-darkblue hover:text-white cursor-pointer text-xs text-white py-2 lg:py-3 px-12 mt-4 rounded-sm lg:rounded-lg border border-darkblue"
             >
               Explore
             </div>
@@ -88,13 +88,11 @@ function OurServices() {
                 {clicked?.service}
               </h2>
             </div>
-            <p className="text-gray-700 text-xs lg:text-sm text-center py-4 underline underline-offset-2">
+            <p className="text-gray-700 text-sm text-center py-4 underline underline-offset-2">
               {clicked?.description}
             </p>
 
-            <p className="text-justify text-xs lg:text-sm">
-              {clicked?.description2}
-            </p>
+            <p className="text-justify text-sm">{clicked?.description2}</p>
           </div>
         </div>
       </div>

@@ -28,7 +28,7 @@ function HeaderSwiper() {
     <div>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
-          <div className="bg-[linear-gradient(to_right_top,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('/pic5.jpg')] bg-center bg-cover min-h-screen w-full flex flex-col justify-start items-start pt-48 lg:pt-64 pb-8 lg:pb-0">
+          <div className="bg-[linear-gradient(to_right_top,rgba(0,0,0,0.7),rgba(0,0,0,0.4)),url('/pic1.jpg')] bg-center bg-cover lg:min-h-screen w-full flex flex-col justify-start items-start pt-36 lg:pt-64 pb-8 lg:pb-0">
             <div className="px-2 lg:px-12 xl:px-36" data-aos="fade-left">
               <h1 className="text-white text-2xl lg:text-5xl font-bold w-full lg:w-8/12 tracking-tighter">
                 Compassionate Care and Advanced Medicine, Every Step of the Way

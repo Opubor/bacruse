@@ -52,7 +52,7 @@ const services = [
       "Advanced surgical procedures with modern equipment and skilled surgeons.",
     description2:
       "Our hospital provides a wide range of surgical procedures — both elective and emergency. With state-of-the-art operating theaters and a team of highly skilled surgeons, we ensure each procedure is carried out with precision, care, and strict hygiene standards, from pre-surgery preparation to recovery.",
-    backgroundPicture: "/pic14.jpg",
+    backgroundPicture: "/pic17.jpg",
   },
   {
     id: 6,
@@ -86,7 +86,7 @@ const blog = [
     day: "19",
     month: "MAR",
     year: "2022",
-    picture: "/pic5.jpg",
+    picture: "/pic1.jpg",
     title: "5 Signs You Should See a Doctor Sooner Than Later",
     paragraph1:
       "Many people delay visiting a doctor, hoping symptoms will pass. While some discomforts are harmless, others may signal something serious. Knowing when to act can make a big difference.",

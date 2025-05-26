@@ -1,7 +1,7 @@
 "use client";
 import { services } from "@/data/data";
 import React, { useEffect, useState } from "react";
-import { FaDotCircle, FaStethoscope } from "react-icons/fa";
+import { FaChevronRight, FaDotCircle, FaStethoscope } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
 
 function OurServices() {
@@ -24,7 +24,36 @@ function OurServices() {
         journey.
       </p>
 
-      <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-1 lg:gap-4 pt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-1 lg:gap-4 pt-8">
+        {services?.map((data) => (
+          <div
+            key={data?.id}
+            className="flex justify-between items-center bg-[url('/pic24.jpg')] bg-center bg-cover"
+          >
+            <div
+              style={{
+                backgroundImage: `url(${data.backgroundPicture})`,
+              }}
+              className="w-2/12 h-full bg-center bg-cover"
+            ></div>
+
+            <div className="w-10/12 flex justify-between items-center">
+              <h1 className="text-white lg:text-md lg:font-semibold p-4 lg:p-4">
+                {data?.service}
+              </h1>
+              <div
+                onClick={() => {
+                  setOpenModal(true), setServiceId(data?.id);
+                }}
+                className="text-white border-l-2 border-l-white h-full p-2 lg:p-4 cursor-pointer"
+              >
+                <FaChevronRight />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-1 lg:gap-4 pt-8">
         {services?.map((data) => (
           <div
             key={data?.id}
@@ -41,9 +70,7 @@ function OurServices() {
               {data?.service}
             </h1>
 
-            {/* <p className="text-sm text-center text-white">
-              {data?.description}
-            </p> */}
+          
 
             <div
               onClick={() => {
@@ -55,7 +82,7 @@ function OurServices() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* ===Modal=== */}
       <div

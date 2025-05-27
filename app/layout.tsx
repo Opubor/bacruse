@@ -13,8 +13,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Hospital sourcecode1",
-  description: "Hospital sourcecode",
+  title: "Hospital Website Demo",
+  description: "Hospital website demo for potential clients.",
+  icons: "/logo1.png",
+  keywords: "Hospital website demo",
+  openGraph: {
+    title: "Hospital Website Demo",
+    description: "Hospital website demo for potential clients",
+    url: "https://hospital-landingpage1.netlify.app/",
+    siteName: "Hospital website demo",
+    images: [
+      {
+        url: "https://hospital-landingpage1.netlify.app/pic23.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Hospital website demo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Hospital Website Demo",
+    description: "Hospital Website Demo",
+    images: ["https://hospital-landingpage1.netlify.app/pic23.jpg"],
+  },
 };
 
 export default function RootLayout({

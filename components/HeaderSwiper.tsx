@@ -42,7 +42,7 @@ function HeaderSwiper() {
               <h1 className="text-darkblue bg-white/85 p-2 lg:p-4 text-2xl lg:text-5xl font-bold w-full tracking-tighter flex justify-start items-center gap-2">
                 Your Health, Our Priority <FaCheckDouble />
               </h1>
-              <p className="text-sm lg:text-lg my-8 bg-white/85 text-darkblue p-2 lg:p-4 w-full">
+              <p className="text-sm lg:text-lg my-8 bg-black/85 text-white p-2 lg:p-4 w-full">
                 Expert care, modern technology, and a compassionate team — all
                 in one place.
               </p>
@@ -123,7 +123,7 @@ function HeaderSwiper() {
               <h1 className="text-darkblue bg-white/85 p-2 lg:p-4 text-2xl lg:text-5xl font-bold w-full tracking-tighter">
                 Your Health, Our Priority
               </h1>
-              <p className="text-sm lg:text-lg my-8 bg-white/85 text-darkblue p-2 lg:p-4 w-full">
+              <p className="text-sm lg:text-lg my-8 bg-black/85 text-white p-2 lg:p-4 w-full">
                 Expert care, modern technology, and a compassionate team — all
                 in one place.
               </p>
@@ -204,7 +204,7 @@ function HeaderSwiper() {
               <h1 className="text-darkblue bg-white/85 p-2 lg:p-4 text-2xl lg:text-5xl font-bold w-full tracking-tighter">
                 Your Health, Our Priority
               </h1>
-              <p className="text-sm lg:text-lg my-8 bg-white/85 text-darkblue p-2 lg:p-4 w-full">
+              <p className="text-sm lg:text-lg my-8 bg-black/85 text-white p-2 lg:p-4 w-full">
                 Expert care, modern technology, and a compassionate team — all
                 in one place.
               </p>

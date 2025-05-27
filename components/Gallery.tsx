@@ -22,8 +22,8 @@ function Gallery() {
           Gallery
         </h1>
         <p className="text-center text-lg lg:text-2xl pt-4 font-bold tracking-tighter mb-4">
-          A visual journey of our outreach, impact, and community-driven
-          initiatives.
+          A glimpse into our care, facilities, and the people who make it all
+          possible.
         </p>
       </div>
 

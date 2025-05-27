@@ -145,7 +145,7 @@ const contactInformation = [
     phone1: "+2349139124809",
     phone2: "+2348119238643",
     email: "opubortony@gmail.com",
-    address: "No. 9 Abraham Adesanya estate, Lekki, Lagos, Nigeria",
+    address: "No. 9 rubber plantation Warri, Delta state, Nigeria.",
     openingHours: "MON - FRI, 9am - 5pm",
     facebook:
       "https://www.facebook.com/profile.php?id=100094794262869&mibextid=LQQJ4d",

@@ -14,12 +14,14 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Hospital Website Demo",
-  description: "Hospital website demo for potential clients.",
+  description:
+    "A professional hospital website that helps clients access your services, view contact information, book appointments, build trust in your care, and much more — all in one place.",
   icons: "/logo1.png",
   keywords: "Hospital website demo",
   openGraph: {
     title: "Hospital Website Demo",
-    description: "Hospital website demo for potential clients",
+    description:
+      "A professional hospital website that helps clients access your services, view contact information, book appointments, build trust in your care, and much more — all in one place.",
     url: "https://hospital-landingpage1.netlify.app/",
     siteName: "Hospital website demo",
     images: [

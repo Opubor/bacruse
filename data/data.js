@@ -1,4 +1,4 @@
-const hospitalName = "[Hospital Name]";
+const hospitalName = "Solar Clinic";
 
 const navlinks = [
   { id: 0, name: "Home", link: "/" },

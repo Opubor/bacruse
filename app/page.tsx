@@ -12,14 +12,16 @@ import Footer from "@/components/Footer";
 import OurMission from "@/components/OurMission";
 import OurVision from "@/components/OurVision";
 import Link from "next/link";
+import BackgroundSwiper from "@/components/ComponentX";
 
 export default function Home() {
   return (
     <div className="overflow-x-hidden bg-white text-black">
       <Navbar />
 
-      <HeaderSwiper />
+      {/* <HeaderSwiper /> */}
 
+      <BackgroundSwiper />
       <OurServices />
 
       <BookAnAppointment />

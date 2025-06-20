@@ -9,6 +9,9 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import Blog from "@/components/Blog";
 import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
+import OurMission from "@/components/OurMission";
+import OurVision from "@/components/OurVision";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -25,7 +28,18 @@ export default function Home() {
 
       <Staffs />
 
-      <AboutUs />
+      <OurVision />
+
+      <OurMission />
+
+      <div className="bg-darkblue py-4 w-full flex justify-center">
+        <Link
+          href={"/about-us"}
+          className="bg-white px-16 py-4 rounded-full hover:bg-lightblue text-sm"
+        >
+          Learn More About Us
+        </Link>
+      </div>
 
       <WhyChooseUs />
 

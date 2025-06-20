@@ -1,4 +1,5 @@
-const hospitalName = "Island Clinic";
+const hospitalName = "Barcruse";
+const hospitalName2 = "Outpatient Clinic";
 
 const navlinks = [
   { id: 0, name: "Home", link: "/" },
@@ -11,7 +12,7 @@ const navlinks = [
 const services = [
   {
     id: 1,
-    service: "General Consultation",
+    service: "Medical Consultation",
     description:
       "Routine check-ups and medical advice from experienced physicians.",
     description2:
@@ -20,64 +21,53 @@ const services = [
   },
   {
     id: 2,
-    service: "Emergency Care",
-    description:
-      "24/7 urgent medical attention for accidents and critical conditions.",
+    service: "Eye Clinic",
+    description: "We are committed to helping you see the world more clearly.",
     description2:
-      "Our emergency department operates 24/7 to provide immediate care for accidents, injuries, and life-threatening conditions. With a dedicated team of doctors, nurses, and emergency responders, we are equipped to stabilize critical patients and offer timely interventions in a safe and controlled environment.",
-    backgroundPicture: "/pic20.jpg",
+      "Our Eye Clinic provides expert eye examinations, diagnosis, and treatment for a wide range of eye conditions. From routine vision checks and prescription lenses to managing eye infections and monitoring chronic eye diseases, our dedicated team ensures personalized and professional care in a comfortable environment.",
+    backgroundPicture: "/pic31.jpg",
   },
   {
     id: 3,
-    service: "Laboratory",
+    service: "Dental Clnic",
     description:
-      "Accurate testing, blood work, and imaging for timely diagnosis.",
+      "Your smile is our priority, and we’re committed to keeping it healthy and bright.",
     description2:
-      "Our fully equipped laboratory provides accurate and efficient testing services to support your diagnosis and treatment. From routine blood tests to advanced imaging and diagnostics, our skilled technicians work closely with your doctors to ensure timely and reliable results for better medical decisions.",
-    backgroundPicture: "/pic15.jpg",
+      "Our Dental Clinic offers a full range of oral health services, including dental check-ups, cleanings, fillings, tooth extractions, and preventive care. With modern equipment and a gentle approach, our experienced dentists are dedicated to providing high-quality treatment in a friendly and relaxing environment.",
+    backgroundPicture: "/pic32.jpg",
   },
   {
     id: 4,
-    service: "Maternity Services",
-    description:
-      "Prenatal care, delivery, and postnatal support for mothers and babies.",
+    service: "Medical Laboratory",
+    description: "Accurate testing is the foundation of effective healthcare.",
     description2:
-      "We offer comprehensive maternity care that covers every stage — from antenatal checkups and safe deliveries to postnatal support. Our dedicated team of obstetricians, midwives, and nurses provide a nurturing and safe environment for expectant mothers and newborns, making your childbirth experience positive and memorable.",
-    backgroundPicture: "/pic18.jpg",
+      "Our Medical Laboratory provides reliable diagnostic services using advanced equipment and strict quality control standards. From routine blood tests and urinalysis to specialized screenings, our skilled laboratory scientists ensure fast, precise results to support timely diagnosis and treatment decisions.",
+    backgroundPicture: "/pic33.jpg",
   },
   {
     id: 5,
-    service: "Surgical Services",
+    service: "Dispensary",
     description:
-      "Advanced surgical procedures with modern equipment and skilled surgeons.",
+      "Your trusted stop for safe, affordable, and reliable medications.",
     description2:
-      "Our hospital provides a wide range of surgical procedures — both elective and emergency. With state-of-the-art operating theaters and a team of highly skilled surgeons, we ensure each procedure is carried out with precision, care, and strict hygiene standards, from pre-surgery preparation to recovery.",
-    backgroundPicture: "/pic17.jpg",
-  },
-  {
-    id: 6,
-    service: "Pharmacy",
-    description:
-      "On-site access to certified medications and prescription support.",
-    description2:
-      "Our in-house pharmacy offers quick and convenient access to certified medications prescribed by our doctors. Staffed by professional pharmacists, we ensure you receive the right dosage instructions, drug safety information, and friendly support to guide you through your treatment journey.",
-    backgroundPicture: "/pic19.jpg",
+      "Our Dispensary ensures that patients receive high-quality, properly dispensed medications prescribed by our healthcare professionals. With a focus on safety, affordability, and patient education, our pharmacists are always available to provide guidance on proper drug usage and answer any questions you may have.",
+    backgroundPicture: "/pic34.jpg",
   },
 ];
 
 const staffs = [
-  { id: 0, url: "/pic6.jpg", name: "Dr. James Maxwell", role: "Doctor" },
-  { id: 1, url: "/pic7.jpg", name: "Dr. Catherine May", role: "Cardiologist" },
+  { id: 0, url: "/pic8.jpg", name: "Dr. James Maxwell", role: "Doctor" },
+  { id: 1, url: "/pic8.jpg", name: "Dr. Catherine May", role: "Cardiologist" },
   { id: 2, url: "/pic8.jpg", name: "Dr. David Victory", role: "Optometrist" },
-  { id: 3, url: "/pic9.jpg", name: "Dr. Sandra Omoko", role: "Dentist" },
-  { id: 4, url: "/pic10.jpg", name: "Dr. Hannah Victor", role: "Nurse" },
-  { id: 5, url: "/pic11.jpg", name: "Dr. Matthew Glory", role: "Nurse" },
+  { id: 3, url: "/pic8.jpg", name: "Dr. Sandra Omoko", role: "Dentist" },
+  { id: 4, url: "/pic8.jpg", name: "Dr. Hannah Victor", role: "Nurse" },
+  { id: 5, url: "/pic8.jpg", name: "Dr. Matthew Glory", role: "Nurse" },
   { id: 6, url: "/pic8.jpg", name: "Dr. Roy Judith", role: "Dermatologist" },
-  { id: 7, url: "/pic7.jpg", name: "Dr. Juliet Osato", role: "Doctor" },
-  { id: 8, url: "/pic6.jpg", name: "Dr. Divine Bimbo", role: "Doctor" },
-  { id: 9, url: "/pic10.jpg", name: "Dr. Ejike Ebube", role: "Doctor" },
-  { id: 10, url: "/pic11.jpg", name: "Dr. Jennifer Chopra", role: "Doctor" },
-  { id: 11, url: "/pic9.jpg", name: "Dr. Chika TJ", role: "Doctor" },
+  { id: 7, url: "/pic8.jpg", name: "Dr. Juliet Osato", role: "Doctor" },
+  { id: 8, url: "/pic8.jpg", name: "Dr. Divine Bimbo", role: "Doctor" },
+  { id: 9, url: "/pic8.jpg", name: "Dr. Ejike Ebube", role: "Doctor" },
+  { id: 10, url: "/pic8.jpg", name: "Dr. Jennifer Chopra", role: "Doctor" },
+  { id: 11, url: "/pic8.jpg", name: "Dr. Chika TJ", role: "Doctor" },
 ];
 
 const blog = [
@@ -141,12 +131,13 @@ const blog = [
 const contactInformation = [
   {
     id: 0,
-    whatsapp: "+2349139124809",
-    phone1: "+2349139124809",
-    phone2: "+2348119238643",
-    email: "opubortony@gmail.com",
-    address: "No. 9 rubber plantation Warri, Delta state, Nigeria.",
-    openingHours: "MON - FRI, 9am - 5pm",
+    whatsapp: "+2347049088169",
+    phone1: "+2347049088169",
+    phone2: "+23408162745083",
+    email: "barcruseoutpatientclinic@gmail.com",
+    address:
+      "15b Yalinga Street, Wuse 2, Abuja 900288, Federal Capital Territory",
+    openingHours: "MON - FRI - 9am - 5pm; SAT - 10am - 3pm",
     facebook:
       "https://www.facebook.com/profile.php?id=100094794262869&mibextid=LQQJ4d",
     twitter: "https://instagram.com/moricol2022?igshid=OGQ5ZDc2ODk2ZA==",
@@ -199,6 +190,7 @@ const gallery = [
 
 export {
   hospitalName,
+  hospitalName2,
   blog,
   contactInformation,
   navlinks,

@@ -1,5 +1,5 @@
 "use client";
-import { hospitalName, navlinks } from "@/data/data";
+import { hospitalName, hospitalName2, navlinks } from "@/data/data";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -19,9 +19,14 @@ function Navbar() {
           alt="logo"
           className="w-8 h-8"
         />
-        <span className="text-lg lg:text-xl font-bold tracking-tighter">
-          {hospitalName}
-        </span>
+        <div className="flex flex-col items-start">
+          <span className="text-lg lg:text-2xl font-extrabold tracking-tighter text-darkblue leading-none">
+            {hospitalName}
+          </span>
+          <span className="text-blue leading-none text-sm">
+            {hospitalName2}
+          </span>
+        </div>
       </Link>
 
       <div

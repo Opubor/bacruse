@@ -5,11 +5,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --themeblue: #01baef;
-  --themeDarkBlue: #0d41e1;
-  --themeLightBlue: #caf0f8;
+  --themeColor: #492471;
+  --themeColor2: #8a61eb;
+  --themeColor3: #c0aeff;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -19,25 +18,25 @@
 
 @layer utilities {
   .bg-blue {
-    background-color: var(--themeblue);
+    background-color: var(--themeColor2);
   }
   .text-blue {
-    color: var(--themeblue);
+    color: var(--themeColor2);
   }
   .text-darkblue {
-    color: var(--themeDarkBlue);
+    color: var(--themeColor);
   }
   .bg-darkblue {
-    background-color: var(--themeDarkBlue);
+    background-color: var(--themeColor);
   }
   .bg-lightblue {
-    background-color: var(--themeLightBlue);
+    background-color: var(--themeColor3);
   }
   .border-darkblue {
-    border-color: var(--themeDarkBlue);
+    border-color: var(--themeColor);
   }
   .border-blue {
-    border-color: var(--themeblue);
+    border-color: var(--themeColor2);
   }
 }
 

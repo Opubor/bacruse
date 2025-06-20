@@ -24,65 +24,37 @@ function OurServices() {
         journey.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-1 lg:gap-4 pt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-4 pt-8">
         {services?.map((data) => (
           <div
             key={data?.id}
-            className="flex justify-between items-center bg-[url('/pic24.jpg')] bg-center bg-cover"
+            className="w-full h-auto rounded-xl shadow-lg shadow-gray-300"
           >
             <div
               style={{
                 backgroundImage: `url(${data.backgroundPicture})`,
               }}
-              className="w-2/12 h-full bg-center bg-cover"
+              className="w-full h-40 rounded-xl bg-center bg-cover"
             ></div>
 
-            <div className="w-10/12 flex justify-between items-center">
-              <h1 className="text-white lg:text-md lg:font-semibold p-4 lg:p-4">
+            <div className="flex flex-col justify-center items-center p-4">
+              <h1 className="text-darkblue text-center font-bold lg:text-xl tracking-tighter underline p-4 uppercase">
                 {data?.service}
               </h1>
+              <p className="text-center">{data?.description}</p>
               <div
                 onClick={() => {
                   setOpenModal(true), setServiceId(data?.id);
                 }}
-                className="text-white border-l-2 border-l-white h-full p-2 lg:p-4 cursor-pointer"
+                className="cursor-pointer bg-darkblue hover:bg-blue flex justify-center items-center gap-1 text-sm text-white rounded-full px-16 py-3 mt-4"
               >
+                <span>Read more</span>
                 <FaChevronRight />
               </div>
             </div>
           </div>
         ))}
       </div>
-      {/* <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-1 lg:gap-4 pt-8">
-        {services?.map((data) => (
-          <div
-            key={data?.id}
-            style={{
-              backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(${data.backgroundPicture})`,
-            }}
-            className={`p-2 lg:p-6 flex flex-col items-center justify-start bg-center bg-cover shadow-lg shadow-gray-400 bg-white`}
-          >
-            <div className="p-6 bg-white rounded-full">
-              <FaStethoscope className="text-darkblue" />
-            </div>
-
-            <h1 className="text-darkblue bg-white my-2 text-sm md:text-md lg:text-xl lg:font-semibold lg:tracking-tight p-2 rounded-sm text-center">
-              {data?.service}
-            </h1>
-
-          
-
-            <div
-              onClick={() => {
-                setOpenModal(true), setServiceId(data?.id);
-              }}
-              className="bg-darkblue hover:bg-darkblue hover:text-white cursor-pointer text-xs text-white py-2 lg:py-3 px-12 mt-4 rounded-sm lg:rounded-lg border border-darkblue"
-            >
-              Explore
-            </div>
-          </div>
-        ))}
-      </div> */}
 
       {/* ===Modal=== */}
       <div
@@ -128,3 +100,31 @@ function OurServices() {
 }
 
 export default OurServices;
+
+// <div className="grid grid-cols-1 md:grid-cols-2 gap-1 lg:gap-4 pt-8">
+//   {services?.map((data) => (
+//     <div
+//       key={data?.id}
+//       className="flex justify-between items-center bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('/pic29.jpg')] bg-center bg-cover"
+//     >
+//       <div
+//         style={{
+//           backgroundImage: `url(${data.backgroundPicture})`,
+//         }}
+//         className="w-2/12 h-full bg-center bg-cover"
+//       ></div>
+
+//       <div className="w-10/12 flex justify-between items-center">
+//         <h1 className="text-white lg:text-md p-4">{data?.service}</h1>
+//         <div
+//           onClick={() => {
+//             setOpenModal(true), setServiceId(data?.id);
+//           }}
+//           className="text-white border-l-2 border-l-white h-full p-2 lg:p-4 cursor-pointer"
+//         >
+//           <FaChevronRight />
+//         </div>
+//       </div>
+//     </div>
+//   ))}
+// </div>;

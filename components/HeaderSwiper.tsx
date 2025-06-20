@@ -34,7 +34,7 @@ function HeaderSwiper() {
     <div>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
-          <div className="bg-[url('/pic23.jpg')] bg-center bg-cover lg:min-h-screen w-full flex flex-col justify-start items-start pt-36 lg:pt-56 pb-8 lg:pb-0">
+          <div className="bg-[url('/pic29.jpg')] bg-center bg-cover lg:min-h-screen w-full flex flex-col justify-start items-start pt-36 lg:pt-56 pb-8 lg:pb-0">
             <div
               className="px-2 lg:px-12 xl:px-36 flex flex-col justify-start items-start w-full"
               data-aos="fade-left"
@@ -85,6 +85,13 @@ function HeaderSwiper() {
                 >
                   <IoCall /> {contactInformation?.at(0)?.phone1}
                 </Link>
+                <Link
+                  href={`tel:${contactInformation?.at(0)?.phone2!}`}
+                  target="blank"
+                  className="flex justify-start items-center gap-2 text-sm mt-2"
+                >
+                  <IoCall /> {contactInformation?.at(0)?.phone2}
+                </Link>
                 <p className="flex justify-start items-center gap-2 text-sm mt-2">
                   <FaClock /> {contactInformation?.at(0)?.openingHours}
                 </p>
@@ -115,7 +122,7 @@ function HeaderSwiper() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url('/pic22.jpg')] bg-center bg-cover lg:min-h-screen w-full flex flex-col justify-start items-start pt-36 lg:pt-56 pb-8 lg:pb-0">
+          <div className="bg-[url('/pic27.jpg')] bg-center bg-cover lg:min-h-screen w-full flex flex-col justify-start items-start pt-36 lg:pt-56 pb-8 lg:pb-0">
             <div
               className="px-2 lg:px-12 xl:px-36 flex flex-col justify-start items-start w-full"
               data-aos="fade-left"
@@ -166,6 +173,13 @@ function HeaderSwiper() {
                 >
                   <IoCall /> {contactInformation?.at(0)?.phone1}
                 </Link>
+                <Link
+                  href={`tel:${contactInformation?.at(0)?.phone2!}`}
+                  target="blank"
+                  className="flex justify-start items-center gap-2 text-sm mt-2"
+                >
+                  <IoCall /> {contactInformation?.at(0)?.phone2}
+                </Link>
                 <p className="flex justify-start items-center gap-2 text-sm mt-2">
                   <FaClock /> {contactInformation?.at(0)?.openingHours}
                 </p>
@@ -196,7 +210,7 @@ function HeaderSwiper() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="bg-[url('/pic21.jpg')] bg-center bg-cover lg:min-h-screen w-full flex flex-col justify-start items-start pt-36 lg:pt-56 pb-8 lg:pb-0">
+          <div className="bg-[url('/pic30.jpg')] bg-center bg-cover lg:min-h-screen w-full flex flex-col justify-start items-start pt-36 lg:pt-56 pb-8 lg:pb-0">
             <div
               className="px-2 lg:px-12 xl:px-36 flex flex-col justify-start items-start w-full"
               data-aos="fade-left"
@@ -246,6 +260,13 @@ function HeaderSwiper() {
                   className="flex justify-start items-center gap-2 text-sm mt-2"
                 >
                   <IoCall /> {contactInformation?.at(0)?.phone1}
+                </Link>
+                <Link
+                  href={`tel:${contactInformation?.at(0)?.phone2!}`}
+                  target="blank"
+                  className="flex justify-start items-center gap-2 text-sm mt-2"
+                >
+                  <IoCall /> {contactInformation?.at(0)?.phone2}
                 </Link>
                 <p className="flex justify-start items-center gap-2 text-sm mt-2">
                   <FaClock /> {contactInformation?.at(0)?.openingHours}

@@ -64,7 +64,7 @@ function ContactUs() {
         </div>
         <div className="w-96 lg:w-6/12">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15885.492488903948!2d5.729785885100776!3d5.511504783282778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041b2c043a48dc7%3A0x3e55b661dbfd2353!2sAgbasa%2C%20Warri%20332104%2C%20Delta!5e0!3m2!1sen!2sng!4v1746604621784!5m2!1sen!2sng"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.895449222877!2d7.4773390000000015!3d9.0732888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b3817191275%3A0x1480cb836c364fe6!2sBARCRUSE%20VISION!5e0!3m2!1sen!2sng!4v1750444586247!5m2!1sen!2sng"
             width="600"
             height="450"
             loading="lazy"

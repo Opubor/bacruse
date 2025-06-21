@@ -17,7 +17,7 @@ function WhyChooseUs() {
           <h2 className="tracking-tighter text-2xl lg:text-4xl font-bold text-white">
             Why Choose Us
           </h2>
-          <p className="text-base text-white">
+          <p className="text-sm lg:text-base text-white">
             At {hospitalName}, we offer more than just treatment — we provide
             care you can trust. With certified experts, modern facilities, and a
             heart for every patient, your health is in the best hands. Because

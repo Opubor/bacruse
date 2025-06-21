@@ -73,10 +73,10 @@ const staffs = [
 const blog = [
   {
     id: 1,
-    day: "19",
+    day: "17",
     month: "MAR",
-    year: "2022",
-    picture: "/pic1.jpg",
+    year: "2025",
+    picture: "/pic56.jpg",
     title: "5 Signs You Should See a Doctor Sooner Than Later",
     paragraph1:
       "Many people delay visiting a doctor, hoping symptoms will pass. While some discomforts are harmless, others may signal something serious. Knowing when to act can make a big difference.",
@@ -91,29 +91,28 @@ const blog = [
   },
   {
     id: 2,
-    day: "23",
-    month: "AUG",
+    day: "14",
+    month: "MAY",
     year: "2025",
-    picture: "/pic4.jpg",
-    title:
-      "Preparing for a Healthy Pregnancy: What Every Expecting Mother Should Know",
+    picture: "/pic55.jpg",
+    title: "Building a Healthier Lifestyle: Small Changes, Big Impact",
     paragraph1:
-      "Pregnancy is a beautiful journey, but it also requires proper planning and care. Starting with prenatal visits can ensure the best health outcomes for both mother and baby.",
+      "Living a healthy life doesn’t have to mean making huge, overwhelming changes overnight. In fact, some of the most powerful health transformations come from small, consistent habits that gradually improve your overall well-being. At Barcruse Outpatient Clinic, we believe in empowering individuals and families to take charge of their health — one step at a time.",
     paragraph2:
-      "Taking prenatal vitamins, especially folic acid, is essential in the early weeks. It helps in the development of the baby’s brain and spinal cord and reduces the risk of birth defects.",
+      "Simple daily habits like drinking more water, walking for 30 minutes, or eating more vegetables can significantly reduce your risk of common illnesses like heart disease, diabetes, and obesity. These changes may seem small, but over time, they build a strong foundation for lasting health. Combined with regular sleep and stress management, your body begins to function more efficiently — improving mood, energy, and immunity.",
     paragraph3:
-      "Regular checkups allow doctors to monitor the baby’s growth, manage any risks, and provide guidance on nutrition, exercise, and lifestyle changes.",
+      "Nutrition is another essential part of a healthy lifestyle. A balanced diet full of fresh fruits, vegetables, whole grains, and lean proteins helps fuel your body and prevent chronic diseases. It’s also important to limit processed foods, sugary drinks, and excessive salt. Our clinic’s nutrition team is always available to offer personalized dietary advice and support based on your health needs.",
     paragraph4:
-      "It’s important to listen to your body. If you experience unusual symptoms like swelling, blurred vision, or severe cramps, inform your healthcare provider immediately.",
+      "Preventive care is just as important as your lifestyle choices. Regular health check-ups, dental cleanings, eye exams, and lab screenings help ensure you catch any potential issues early. At Barcruse Outpatient Clinic, we make it easy by offering all these services in one convenient and welcoming location — so you can focus on living well.",
     paragraph5:
-      "Creating a birth plan and choosing a trusted maternity facility can make delivery smoother. Our maternity team is here to support you every step of the way.",
+      "Your health journey doesn’t have to be perfect — it just needs to start. Whether you’re making your first visit or returning for ongoing care, we’re here to support your goals every step of the way. Small changes today lead to a healthier, happier you tomorrow.",
   },
   {
     id: 3,
     day: "11",
     month: "JUN",
-    year: "2016",
-    picture: "/pic3.jpg",
+    year: "2025",
+    picture: "/pic54.jpg",
     title: "Why Regular Health Screenings Could Save Your Life",
     paragraph1:
       "Many serious conditions — like high blood pressure, diabetes, and certain cancers — develop silently. Health screenings help detect them before symptoms appear.",

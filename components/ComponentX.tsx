@@ -70,10 +70,6 @@ export default function BackgroundSwiper() {
               healthcare using the latest medical innovations — with compassion,
               integrity, and a deep commitment to your total well-being.
             </p>
-            {/* <p className="text-base lg:text-lg my-4 lg:my-8 text-white p-2 lg:p-4 w-full">
-              Expert care, modern technology, and a compassionate team — all in
-              one place.
-            </p> */}
 
             <div className="w-full flex flex-col lg:flex-row justify-start items-start gap-4 lg:gap-8">
               <Link
@@ -93,7 +89,7 @@ export default function BackgroundSwiper() {
             </div>
 
             <div className="w-full flex justify-start">
-              <div className="text-darkblue mt-8 bg-white p-6 rounded-2xl">
+              <div className="text-darkblue mt-8 bg-white p-4 lg:p-6 rounded-2xl">
                 <h1 className="underline underline-offset-2 uppercase mb-2">
                   Contact us
                 </h1>

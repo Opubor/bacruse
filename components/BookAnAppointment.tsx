@@ -7,23 +7,55 @@ function BookAnAppointment() {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [dateTime, setDateTime] = useState("");
+  const [error, setError] = useState("");
+
+  const validateForm = () => {
+    const nameRegex = /^[a-zA-Z\s.'-]{2,50}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^[0-9]{10,15}$/;
+
+    if (!nameRegex.test(name.trim())) {
+      return "Please enter a valid name (letters, spaces, and basic punctuation only).";
+    }
+
+    if (!emailRegex.test(email.trim())) {
+      return "Please enter a valid email address.";
+    }
+
+    if (!phoneRegex.test(phone.trim())) {
+      return "Phone number should contain 10 to 15 digits.";
+    }
+
+    if (!dateTime.trim()) {
+      return "Please select a date and time.";
+    }
+
+    return "";
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const adminPhone = "2349139124809";
-    const message = `New Appointment Booking:
+    const validationError = validateForm();
+    if (validationError) {
+      setError(validationError);
+      return;
+    }
 
-Name: ${name}
-Email: ${email}
-Phone: ${phone}
-Date & Time: ${dateTime}`;
+    setError("");
+
+    const adminPhone = "2349139124809"; // Admin WhatsApp number
+    const message = `📅 *New Appointment Booking*
+
+*Name:* ${name}
+*Email:* ${email}
+*Phone:* ${phone}
+*Date & Time:* ${dateTime}`;
 
     const whatsappURL = `https://wa.me/${adminPhone}?text=${encodeURIComponent(
       message
     )}`;
-
-    window.open(whatsappURL, "_blank"); // Open WhatsApp
+    window.open(whatsappURL, "_blank");
   };
 
   return (
@@ -40,6 +72,9 @@ Date & Time: ${dateTime}`;
           </h1>
 
           <form onSubmit={handleSubmit}>
+            {error && (
+              <p className="text-red-600 text-xs font-medium my-2">{error}</p>
+            )}
             <input
               className="border border-gray-300 p-2 rounded-md w-full mt-2 text-sm"
               placeholder="Name"

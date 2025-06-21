@@ -57,7 +57,7 @@ export default function BackgroundSwiper() {
 
       {/* Foreground Content */}
       <div className="absolute inset-0 z-20 flex items-center justify-center text-white min-h-screen">
-        <div className="bg-center bg-cover  w-full flex flex-col justify-start items-start pt-80 lg:pt-72 pb-8 lg:pb-0">
+        <div className="bg-center bg-cover  w-full flex flex-col justify-start items-start pt-28 lg:pt-20 pb-8 lg:pb-0">
           <div
             className="px-2 lg:px-12 xl:px-36 flex flex-col justify-start items-start w-full"
             data-aos="fade-left"
@@ -124,28 +124,6 @@ export default function BackgroundSwiper() {
                 <p className="flex justify-start items-center gap-2 text-sm mt-2">
                   <FaClock /> {contactInformation?.at(0)?.openingHours}
                 </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex justify-between w-full">
-            <div className="hidden lg:flex w-5/12"></div>
-            <div className="w-full lg:w-7/12 backdrop-blur-md flex justify-between items-center mt-16 lg:border-l lg:border-l-white border-t border-t-white lg:rounded-tl-3xl">
-              <div className="text-white flex flex-col justify-center items-center gap-1 p-8 w-3/12">
-                <FaShieldAlt className="text-2xl lg:text-6xl" />
-                <h1 className="text-xs lg:text-sm">Trusted</h1>
-              </div>
-              <div className="text-white flex flex-col justify-center items-center gap-1 p-8 w-3/12">
-                <HiBadgeCheck className="text-2xl lg:text-6xl" />
-                <h1 className="text-xs lg:text-sm">Certified</h1>
-              </div>
-              <div className="text-white flex flex-col justify-center items-center gap-1 p-8 w-3/12">
-                <FaMedal className="text-2xl lg:text-6xl" />
-                <h1 className="text-xs lg:text-sm">Accredited</h1>
-              </div>
-              <div className="text-white flex flex-col justify-center items-center gap-1 p-8 w-3/12">
-                <FaUserMd className="text-2xl lg:text-6xl" />
-                <h1 className="text-xs lg:text-sm">Experienced</h1>
               </div>
             </div>
           </div>
@@ -242,3 +220,25 @@ export default function BackgroundSwiper() {
     </div>
   );
 }
+
+// <div className="flex justify-between w-full">
+//   <div className="hidden lg:flex w-5/12"></div>
+//   <div className="w-full lg:w-7/12 backdrop-blur-md flex justify-between items-center mt-16 lg:border-l lg:border-l-white border-t border-t-white lg:rounded-tl-3xl">
+//     <div className="text-white flex flex-col justify-center items-center gap-1 p-8 w-3/12">
+//       <FaShieldAlt className="text-2xl lg:text-6xl" />
+//       <h1 className="text-xs lg:text-sm">Trusted</h1>
+//     </div>
+//     <div className="text-white flex flex-col justify-center items-center gap-1 p-8 w-3/12">
+//       <HiBadgeCheck className="text-2xl lg:text-6xl" />
+//       <h1 className="text-xs lg:text-sm">Certified</h1>
+//     </div>
+//     <div className="text-white flex flex-col justify-center items-center gap-1 p-8 w-3/12">
+//       <FaMedal className="text-2xl lg:text-6xl" />
+//       <h1 className="text-xs lg:text-sm">Accredited</h1>
+//     </div>
+//     <div className="text-white flex flex-col justify-center items-center gap-1 p-8 w-3/12">
+//       <FaUserMd className="text-2xl lg:text-6xl" />
+//       <h1 className="text-xs lg:text-sm">Experienced</h1>
+//     </div>
+//   </div>
+// </div>;

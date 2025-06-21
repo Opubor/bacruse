@@ -4,7 +4,7 @@ function OurMission() {
   return (
     <div
       id="about_us"
-      className="px-2 lg:px-12 xl:px-32 pb-16 pt-8 bg-gray-50 flex flex-col lg:flex-row justify-between items-center gap-6 scroll-mt-20"
+      className="px-2 lg:px-12 xl:px-32 pb-16 pt-8 flex flex-col lg:flex-row justify-between items-center gap-6 scroll-mt-20"
     >
       <div className="w-full lg:w-7/12">
         <h1 className="uppercase border-l-2 border-l-black text-sm px-2">

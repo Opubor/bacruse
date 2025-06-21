@@ -17,11 +17,11 @@ function ContactUs() {
         Have a question or need support? Get in touch with our team today.
       </p>
       <div className="flex flex-col lg:flex-row justify-between items-start gap-4 pt-4 lg:pt-16">
-        <div className="w-full lg:w-6/12">
+        <div className="w-full lg:w-6/12 bg-white p-4 rounded-2xl shadow-lg shadow-gray-300">
           <Link
             href={`mailto:${contactInformation?.at(0)?.email!}`}
             target="blank"
-            className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+            className="flex justify-start items-center gap-1 text-sm lg:text-base pt-4"
           >
             <MdOutlineMailOutline />
             {contactInformation?.at(0)?.email}
@@ -29,7 +29,7 @@ function ContactUs() {
           <Link
             href={`tel:${contactInformation?.at(0)?.phone1!}`}
             target="blank"
-            className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+            className="flex justify-start items-center gap-1 text-sm lg:text-base pt-4"
           >
             <IoCallOutline />
             {contactInformation?.at(0)?.phone1}
@@ -37,16 +37,16 @@ function ContactUs() {
           <Link
             href={`tel:${contactInformation?.at(0)?.phone2!}`}
             target="blank"
-            className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+            className="flex justify-start items-center gap-1 text-sm lg:text-base pt-4"
           >
             <IoCallOutline />
             {contactInformation?.at(0)?.phone2}
           </Link>
-          <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
+          <p className="flex justify-start items-center gap-1 text-sm lg:text-base pt-4">
             <IoLocationOutline />
             {contactInformation?.at(0)?.address}
           </p>
-          <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
+          <p className="flex justify-start items-center gap-1 text-sm lg:text-base pt-4">
             <CiClock2 />
             {contactInformation?.at(0)?.openingHours}
           </p>

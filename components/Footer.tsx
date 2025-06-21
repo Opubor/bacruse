@@ -1,7 +1,9 @@
-import { contactInformation, hospitalName } from "@/data/data";
+import { hospitalName, hospitalName2 } from "@/data/data";
+import { fetchContactInfo } from "@/services/contactInformation";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { AiFillTikTok } from "react-icons/ai";
 import { CiClock2 } from "react-icons/ci";
 import {
   FaFacebook,
@@ -9,10 +11,13 @@ import {
   FaRegCalendarAlt,
 } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 
-function Footer() {
+async function Footer() {
+  const contactInformation = await fetchContactInfo();
+
   return (
     <div className="mt-16">
       <div className="py-16 px-2 lg:px-12 xl:px-36 bg-gray-900 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-0">
@@ -28,44 +33,55 @@ function Footer() {
               />
             </div>
             <div>
-              <h1 className="text-white font-bold text-md lg:text-2xl tracking-tight">
+              <h1 className="text-darkblue font-bold text-md lg:text-2xl tracking-tight">
                 {hospitalName}
+              </h1>
+              <h1 className="text-blue text-sm tracking-tight">
+                {hospitalName2}
               </h1>
             </div>
           </Link>
 
           <div className="text-white mt-8">
             <Link
-              href={`mailto:${contactInformation?.at(0)?.email!}`}
+              href={`mailto:${contactInformation?.at(0)?.email! || "/"}`}
               target="blank"
-              className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+              className="flex justify-start items-center gap-1 text-xs lg:text-sm pt-4"
             >
               <MdOutlineMailOutline />
               {contactInformation?.at(0)?.email}
             </Link>
             <Link
-              href={`tel:${contactInformation?.at(0)?.phone1!}`}
+              href={`tel:${contactInformation?.at(0)?.whatsappNumber! || "/"}`}
               target="blank"
-              className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+              className="flex justify-start items-center gap-1 text-xs lg:text-sm pt-4"
             >
-              <IoCallOutline />
-              {contactInformation?.at(0)?.phone1}
+              <IoLogoWhatsapp />
+              {contactInformation?.at(0)?.whatsappNumber}
             </Link>
             <Link
-              href={`tel:${contactInformation?.at(0)?.phone2!}`}
+              href={`tel:${contactInformation?.at(0)?.phoneNumber1! || "/"}`}
               target="blank"
-              className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4"
+              className="flex justify-start items-center gap-1 text-xs lg:text-sm pt-4"
             >
               <IoCallOutline />
-              {contactInformation?.at(0)?.phone2}
+              {contactInformation?.at(0)?.phoneNumber1}
             </Link>
-            <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
+            <Link
+              href={`tel:${contactInformation?.at(0)?.phoneNumber2! || "/"}`}
+              target="blank"
+              className="flex justify-start items-center gap-1 text-xs lg:text-sm pt-4"
+            >
+              <IoCallOutline />
+              {contactInformation?.at(0)?.phoneNumber2 || "/"}
+            </Link>
+            <p className="flex justify-start items-center gap-1 text-xs lg:text-sm pt-4">
               <IoLocationOutline />
-              {contactInformation?.at(0)?.address}
+              {contactInformation?.at(0)?.address! || "Our Address"}
             </p>
-            <p className="flex justify-start items-center gap-1 text-xs lg:text-base pt-4">
+            <p className="flex justify-start items-center gap-1 text-xs lg:text-sm pt-4">
               <CiClock2 />
-              {contactInformation?.at(0)?.openingHours}
+              {contactInformation?.at(0)?.openingHours || "Opening Hours"}
             </p>
           </div>
         </div>
@@ -116,19 +132,36 @@ function Footer() {
             GDPR Policy
           </Link>
         </div>
+
         <div className="text-white flex flex-col justify-start items-center">
           <h1 className="font-medium text-white underline underline-offset-2">
             SOCIALS
           </h1>
           <div className="mt-4 flex justify-center items-center gap-4">
-            <Link href={contactInformation?.at(0)?.facebook!} target="blank">
+            <Link
+              href={contactInformation?.at(0)?.facebookUrl! || "/"}
+              target="blank"
+            >
               <FaFacebook className="text-xl" />
             </Link>
-            <Link href={contactInformation?.at(0)?.twitter!} target="blank">
+            <Link
+              href={contactInformation?.at(0)?.twitterUrl! || "/"}
+              target="blank"
+            >
               <FaSquareXTwitter className="text-xl" />
             </Link>
-            <Link href={contactInformation?.at(0)?.instagram!} target="blank">
+            <Link
+              href={contactInformation?.at(0)?.instagramUrl! || "/"}
+              target="blank"
+            >
               <FaInstagramSquare className="text-xl" />
+            </Link>
+
+            <Link
+              href={contactInformation?.at(0)?.tiktokUrl || "/"}
+              target="blank"
+            >
+              <AiFillTikTok className="text-xl" />
             </Link>
           </div>
 

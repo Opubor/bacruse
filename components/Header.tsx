@@ -1,15 +1,3 @@
-// components/BackgroundSwiper.tsx
-"use client";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import { EffectFade, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/effect-fade";
-// Import Swiper styles
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 import {
   FaCheckDouble,
   FaClock,
@@ -24,33 +12,13 @@ import Link from "next/link";
 import { contactInformation } from "@/data/data";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdLocalHospital } from "react-icons/md";
+import ContactInformationCard from "./ContactInformationCard";
+import HeaderSwiper from "./HeaderSwiper";
 
-const backgroundImages = [
-  { img: "/pic16.jpg" },
-  { img: "/pic22.jpg" },
-  { img: "/pic23.jpg" },
-];
-
-export default function BackgroundSwiper() {
+export default function Header() {
   return (
     <div className="relative w-full min-h-screen">
-      {/* Swiper for background only */}
-      <Swiper
-        modules={[Autoplay]}
-        speed={800}
-        autoplay={{ delay: 4000, disableOnInteraction: false }}
-        loop={true}
-        className="mySwiper absolute inset-0 w-full min-h-full z-0"
-      >
-        {backgroundImages.map((data, i) => (
-          <SwiperSlide key={i}>
-            <div
-              className="w-full min-h-screen bg-cover bg-center"
-              style={{ backgroundImage: `url(${data?.img})` }}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <HeaderSwiper />
 
       {/* Optional Overlay */}
       <div className="absolute inset-0 bg-black/70 z-10" />
@@ -88,44 +56,17 @@ export default function BackgroundSwiper() {
               </Link>
             </div>
 
-            <div className="w-full flex justify-start">
-              <div className="text-darkblue mt-8 bg-white p-4 lg:p-6 rounded-2xl">
-                <h1 className="underline underline-offset-2 uppercase mb-2">
-                  Contact us
-                </h1>
-                <p className="flex justify-start items-center gap-2 text-sm">
-                  <FaLocationDot /> {contactInformation?.at(0)?.address}
-                </p>
-                <Link
-                  href={`https://wa.me/${contactInformation?.at(0)?.whatsapp}`}
-                  target="_blank"
-                  className="flex justify-start items-center gap-2 text-sm mt-2"
-                >
-                  <IoLogoWhatsapp /> {contactInformation?.at(0)?.whatsapp}
-                </Link>
-                <Link
-                  href={`tel:${contactInformation?.at(0)?.phone1!}`}
-                  target="blank"
-                  className="flex justify-start items-center gap-2 text-sm mt-2"
-                >
-                  <IoCall /> {contactInformation?.at(0)?.phone1}
-                </Link>
-                <Link
-                  href={`tel:${contactInformation?.at(0)?.phone2!}`}
-                  target="blank"
-                  className="flex justify-start items-center gap-2 text-sm mt-2"
-                >
-                  <IoCall /> {contactInformation?.at(0)?.phone2}
-                </Link>
-                <p className="flex justify-start items-center gap-2 text-sm mt-2">
-                  <FaClock /> {contactInformation?.at(0)?.openingHours}
-                </p>
-              </div>
-            </div>
+            {/* Contact Information Card */}
+            <ContactInformationCard />
           </div>
         </div>
       </div>
-      {/* <div className="absolute inset-0 z-20 flex items-center justify-center text-white">
+    </div>
+  );
+}
+
+{
+  /* <div className="absolute inset-0 z-20 flex items-center justify-center text-white">
         <div className="bg-center bg-cover lg:min-h-screen w-full flex flex-col justify-start items-start pt-72 pb-8 lg:pb-0">
           <div
             className="px-2 lg:px-12 xl:px-36 flex flex-col justify-start items-start w-full"
@@ -212,9 +153,7 @@ export default function BackgroundSwiper() {
             </div>
           </div>
         </div>
-      </div> */}
-    </div>
-  );
+      </div> */
 }
 
 // <div className="flex justify-between w-full">

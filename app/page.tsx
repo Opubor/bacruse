@@ -1,9 +1,7 @@
-import HeaderSwiper from "@/components/HeaderSwiper";
 import Gallery from "@/components/Gallery";
 import Navbar from "@/components/Navbar";
 import OurServices from "@/components/OurServices";
 import Staffs from "@/components/Staffs";
-import AboutUs from "@/components/AboutUs";
 import BookAnAppointment from "@/components/BookAnAppointment";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Blog from "@/components/Blog";
@@ -12,16 +10,15 @@ import Footer from "@/components/Footer";
 import OurMission from "@/components/OurMission";
 import OurVision from "@/components/OurVision";
 import Link from "next/link";
-import BackgroundSwiper from "@/components/ComponentX";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
     <div className="overflow-x-hidden bg-white text-black">
       <Navbar />
 
-      {/* <HeaderSwiper /> */}
+      <Header />
 
-      <BackgroundSwiper />
       <OurServices />
 
       <BookAnAppointment />

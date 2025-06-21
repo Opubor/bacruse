@@ -1,13 +1,16 @@
-import { contactInformation } from "@/data/data";
+import { fetchContactInfo } from "@/services/contactInformation";
 import Link from "next/link";
 import React from "react";
 import { CiClock2 } from "react-icons/ci";
 import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 
-function ContactUs() {
+async function ContactUs() {
+  const contactInformation = await fetchContactInfo();
+
   return (
     <div id="contact_us" className="py-8 px-2 lg:px-12 xl:px-36 scroll-mt-20">
       <h1 className="uppercase border-l-2 border-l-black text-sm px-2">
@@ -19,45 +22,62 @@ function ContactUs() {
       <div className="flex flex-col lg:flex-row justify-between items-start gap-4 pt-4 lg:pt-16">
         <div className="w-full lg:w-6/12 bg-white p-4 rounded-2xl shadow-lg shadow-gray-300">
           <Link
-            href={`mailto:${contactInformation?.at(0)?.email!}`}
+            href={`mailto:${contactInformation?.at(0)?.email! || "/"}`}
             target="blank"
             className="flex justify-start items-center gap-1 text-sm lg:text-base pt-4"
           >
             <MdOutlineMailOutline />
-            {contactInformation?.at(0)?.email}
+            {contactInformation?.at(0)?.email || "/"}
           </Link>
           <Link
-            href={`tel:${contactInformation?.at(0)?.phone1!}`}
+            href={`tel:${contactInformation?.at(0)?.whatsappNumber! || "/"}`}
+            target="blank"
+            className="flex justify-start items-center gap-1 text-sm lg:text-base pt-4"
+          >
+            <IoLogoWhatsapp />
+            {contactInformation?.at(0)?.whatsappNumber || "/"}
+          </Link>
+          <Link
+            href={`tel:${contactInformation?.at(0)?.phoneNumber1! || "/"}`}
             target="blank"
             className="flex justify-start items-center gap-1 text-sm lg:text-base pt-4"
           >
             <IoCallOutline />
-            {contactInformation?.at(0)?.phone1}
+            {contactInformation?.at(0)?.phoneNumber1 || "/"}
           </Link>
           <Link
-            href={`tel:${contactInformation?.at(0)?.phone2!}`}
+            href={`tel:${contactInformation?.at(0)?.phoneNumber2! || "/"}`}
             target="blank"
             className="flex justify-start items-center gap-1 text-sm lg:text-base pt-4"
           >
             <IoCallOutline />
-            {contactInformation?.at(0)?.phone2}
+            {contactInformation?.at(0)?.phoneNumber2 || "/"}
           </Link>
           <p className="flex justify-start items-center gap-1 text-sm lg:text-base pt-4">
             <IoLocationOutline />
-            {contactInformation?.at(0)?.address}
+            {contactInformation?.at(0)?.address || "/"}
           </p>
           <p className="flex justify-start items-center gap-1 text-sm lg:text-base pt-4">
             <CiClock2 />
-            {contactInformation?.at(0)?.openingHours}
+            {contactInformation?.at(0)?.openingHours || "/"}
           </p>
           <div className="mt-8 flex justify-start items-center gap-4">
-            <Link href={contactInformation?.at(0)?.facebook!} target="blank">
+            <Link
+              href={contactInformation?.at(0)?.facebook! || "/"}
+              target="blank"
+            >
               <FaFacebook className="text-xl" />
             </Link>
-            <Link href={contactInformation?.at(0)?.twitter!} target="blank">
+            <Link
+              href={contactInformation?.at(0)?.twitter! || "/"}
+              target="blank"
+            >
               <FaSquareXTwitter className="text-xl" />
             </Link>
-            <Link href={contactInformation?.at(0)?.instagram!} target="blank">
+            <Link
+              href={contactInformation?.at(0)?.instagram! || "/"}
+              target="blank"
+            >
               <FaInstagramSquare className="text-xl" />
             </Link>
           </div>

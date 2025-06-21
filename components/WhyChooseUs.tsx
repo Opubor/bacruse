@@ -7,12 +7,12 @@ import { MdMemory } from "react-icons/md";
 
 function WhyChooseUs() {
   return (
-    <div className="relative h-screen overflow-hidden px-2 lg:px-12 xl:px-32 ">
+    <div className="relative min-h-screen lg:h-screen overflow-hidden px-2 lg:px-12 xl:px-32 py-8">
       <div className="absolute inset-0 blur-sm scale-105 bg-[url('/pic52.jpg')] bg-center bg-cover flex flex-col xl:flex-row justify-between items-center gap-6 py-8" />
 
       <div className="absolute inset-0 bg-black/50" />
 
-      <div className="relative z-10 flex items-center justify-center gap-4 h-full">
+      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center gap-4 h-full">
         <div className="w-full lg:w-6/12 flex flex-col justify-center items-start gap-4">
           <h2 className="tracking-tighter text-2xl lg:text-4xl font-bold text-white">
             Why Choose Us

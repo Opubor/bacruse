@@ -45,7 +45,7 @@ function BookAnAppointment() {
     setError("");
 
     const adminPhone = "2349139124809"; // Admin WhatsApp number
-    const message = `📅 *New Appointment Booking*
+    const message = `🗓️ *New Appointment Booking*
 
 *Name:* ${name}
 *Email:* ${email}

@@ -1,6 +1,7 @@
 import { fetchContactInfo } from "@/services/contactInformation";
 import Link from "next/link";
 import React from "react";
+import { AiFillTikTok } from "react-icons/ai";
 import { CiClock2 } from "react-icons/ci";
 import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -64,22 +65,28 @@ async function ContactUs() {
           </p>
           <div className="mt-8 flex justify-start items-center gap-4">
             <Link
-              href={contactInformation?.at(0)?.facebook! || "/"}
+              href={contactInformation?.at(0)?.facebookUrl! || "/"}
               target="blank"
             >
               <FaFacebook className="text-xl" />
             </Link>
             <Link
-              href={contactInformation?.at(0)?.twitter! || "/"}
+              href={contactInformation?.at(0)?.twitterUrl! || "/"}
               target="blank"
             >
               <FaSquareXTwitter className="text-xl" />
             </Link>
             <Link
-              href={contactInformation?.at(0)?.instagram! || "/"}
+              href={contactInformation?.at(0)?.instagramUrl! || "/"}
               target="blank"
             >
               <FaInstagramSquare className="text-xl" />
+            </Link>
+            <Link
+              href={contactInformation?.at(0)?.tiktokUrl! || "/"}
+              target="blank"
+            >
+              <AiFillTikTok className="text-xl" />
             </Link>
           </div>
         </div>

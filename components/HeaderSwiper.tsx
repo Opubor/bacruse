@@ -33,12 +33,12 @@ function HeaderSwiper() {
       speed={800}
       autoplay={{ delay: 4000, disableOnInteraction: false }}
       loop={true}
-      className="mySwiper absolute inset-0 w-full min-h-full z-0"
+      className="mySwiper w-full h-full"
     >
       {backgroundImages.map((data, i) => (
         <SwiperSlide key={i}>
           <div
-            className="w-full min-h-screen bg-cover bg-center"
+            className="w-full h-full bg-cover bg-center"
             style={{ backgroundImage: `url(${data?.img})` }}
           />
         </SwiperSlide>

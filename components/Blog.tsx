@@ -28,7 +28,7 @@ function Blog() {
               }}
               className={`h-72 w-full bg-cover bg-center`}
             ></div>
-            <div className="flex justify-start items-start gap-2 mt-4">
+            <div className="flex justify-start items-start gap-4 mt-4">
               <div className="w-2/12">
                 <h1 className="w-16 h-20 bg-darkblue text-white text-md flex justify-center items-center font-medium text-center">
                   {data?.day} <br></br> {data?.month}

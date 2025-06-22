@@ -17,15 +17,17 @@ import HeaderSwiper from "./HeaderSwiper";
 
 export default function Header() {
   return (
-    <div className="relative w-full min-h-screen">
-      <HeaderSwiper />
+    <div className="relative w-full top-0 left-0 right-0 min-h-screen">
+      <div className="absolute inset-0 z-0">
+        <HeaderSwiper />
+      </div>
 
       {/* Optional Overlay */}
       <div className="absolute inset-0 bg-black/70 z-10" />
 
       {/* Foreground Content */}
-      <div className="absolute inset-0 z-20 flex items-center justify-center text-white min-h-screen">
-        <div className="bg-center bg-cover  w-full flex flex-col justify-start items-start pt-28 lg:pt-20 pb-8 lg:pb-0">
+      <div className="relative top-0 left-0 right-0 z-20 flex items-center justify-center text-white">
+        <div className="bg-center bg-cover  w-full flex flex-col justify-start items-start pt-28 lg:pt-36 pb-8 lg:pb-0">
           <div
             className="px-2 lg:px-12 xl:px-36 flex flex-col justify-start items-start w-full"
             data-aos="fade-left"

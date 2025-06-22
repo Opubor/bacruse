@@ -1,9 +1,10 @@
 import { fetchContactInfo } from "@/services/contactInformation";
 import Link from "next/link";
 import React from "react";
-import { FaClock } from "react-icons/fa";
+import { FaClock, FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCall, IoLogoWhatsapp } from "react-icons/io5";
+import { RiWhatsappFill } from "react-icons/ri";
 
 async function ContactInformationCard() {
   const contactInformation = await fetchContactInfo();
@@ -24,7 +25,7 @@ async function ContactInformationCard() {
           target="_blank"
           className="flex justify-start items-center gap-2 text-sm mt-2"
         >
-          <IoLogoWhatsapp /> {contactInformation?.at(0)?.whatsappNumber || "/"}
+          <RiWhatsappFill /> {contactInformation?.at(0)?.whatsappNumber || "/"}
         </Link>
         <Link
           href={`tel:${contactInformation?.at(0)?.phoneNumber1! || "/"}`}

@@ -14,6 +14,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { RiWhatsappFill } from "react-icons/ri";
 
 async function Footer() {
   const contactInformation = await fetchContactInfo();
@@ -56,7 +57,7 @@ async function Footer() {
               target="blank"
               className="flex justify-start items-center gap-1 text-xs lg:text-sm pt-4"
             >
-              <IoLogoWhatsapp />
+              <RiWhatsappFill />
               {contactInformation?.at(0)?.whatsappNumber}
             </Link>
             <Link

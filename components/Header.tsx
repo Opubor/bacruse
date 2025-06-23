@@ -33,7 +33,8 @@ export default function Header() {
             data-aos="fade-left"
           >
             <h1 className="text-white p-2 lg:p-4 text-2xl lg:text-5xl font-extrabold w-full tracking-tighter flex justify-start items-center gap-2">
-              Your Health, Our Priority <FaCheckDouble />
+              Your Health, Our Priority{" "}
+              <FaCheckDouble className="animate-ping" />
             </h1>
             <p className="text-sm lg:text-lg my-4 lg:my-6 text-white p-2 lg:p-4 w-full lg:w-8/12">
               We’re dedicated to providing exceptional, patient-centered

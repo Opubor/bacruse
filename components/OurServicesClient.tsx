@@ -3,6 +3,8 @@ import { services } from "@/data/data";
 import React, { useEffect, useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface Props {
   services: any;
@@ -14,24 +16,29 @@ function OurServicesClient({ services }: Props) {
 
   const clicked = services?.find((data: any) => data?.id === serviceId);
 
-  useEffect(() => {}, [serviceId]);
+  useEffect(() => {
+    AOS.init({ duration: 600 });
+  }, [serviceId]);
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-4 pt-8">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-4 pt-8"
+        data-aos="fade-up"
+      >
         {services?.map((data: any) => (
           <div
             key={data?.id}
-            className="w-full h-auto rounded-xl shadow-lg shadow-gray-300"
+            className="w-full h-auto rounded-xl shadow-lg shadow-gray-300 p-4 bg-white"
           >
             <div
               style={{
                 backgroundImage: `url(${data?.backgroundPicture?.url})`,
               }}
-              className="w-full h-40 rounded-xl bg-center bg-cover"
+              className="w-full h-56 rounded-xl bg-center bg-cover"
             ></div>
 
             <div className="flex flex-col justify-center items-center p-4">
-              <h1 className="text-darkblue text-center font-bold lg:text-xl tracking-tighter underline p-4 uppercase">
+              <h1 className="text-center font-extrabold underline lg:text-xl tracking-tighter p-4 uppercase">
                 {data?.name}
               </h1>
               <p className="text-center">{data?.description1}</p>

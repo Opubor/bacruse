@@ -14,7 +14,11 @@ async function ContactUs() {
   const contactInformation = await fetchContactInfo();
 
   return (
-    <div id="contact_us" className="py-8 px-2 lg:px-12 xl:px-36 scroll-mt-20">
+    <div
+      id="contact_us"
+      className="py-8 px-2 lg:px-12 xl:px-36 scroll-mt-20"
+      data-aos="fade-up"
+    >
       <h1 className="uppercase border-l-2 border-l-black text-sm px-2">
         Contact Us
       </h1>

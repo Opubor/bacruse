@@ -62,6 +62,7 @@ function BookAnAppointment() {
     <div
       id="book_appointment"
       className="px-2 lg:px-12 xl:px-32 bg-white flex flex-col lg:flex-row justify-between items-center gap-6 py-16 scroll-mt-20"
+      data-aos="fade-up"
     >
       <div className="w-full lg:w-7/12 h-auto lg:h-96 bg-white rounded-2xl shadow-lg shadow-gray-300 flex flex-col lg:flex-row justify-between items-center gap-4 p-4">
         <div className="bg-[url('/pic47.jpg')] w-full lg:w-6/12 h-44 lg:h-full bg-center bg-cover rounded-2xl"></div>

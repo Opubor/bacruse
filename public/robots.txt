@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://barcruseoutpatientclinic.com
+
+# Sitemaps
+Sitemap: https://barcruseoutpatientclinic.com/sitemap.xml

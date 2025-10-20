@@ -15,20 +15,20 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Barcruse Outpatient Clinic – Medical, Dental & Eye Care in Abuja",
   description:
-    "Barcruse Outpatient Clinic in Wuse 2, Abuja offers expert care in general consultation, eye tests, glasses prescriptions, dental treatments, HIV testing, blood work, malaria diagnosis, antenatal services, and a full dispensary for medications.",
+    "Barcruse Outpatient Clinic, Abuja offers expert care in general consultation, eye tests, glasses prescriptions, dental treatments, HIV testing, blood work, malaria diagnosis, antenatal services, and a full dispensary for medications.",
   icons: "/logo1.png",
   keywords:
-    "Barcruse Clinic Abuja, Hospital Wuse 2, Eye Clinic Abuja, Glasses Prescription Abuja, Dental Clinic Abuja, Tooth Extraction, Dental Cleaning, HIV Test Abuja, Malaria Treatment, Antenatal Clinic, Blood Test Center Abuja, Vaccination Center, Blood Pressure Check, Medical Laboratory Abuja, Medication Dispensary, Health Checkup, Medical Consultation, Hospital Near Me, Clinics in Abuja",
+    "Barcruse Clinic Abuja, Hospital, Eye Clinic Abuja, Glasses Prescription Abuja, Dental Clinic Abuja, Tooth Extraction, Dental Cleaning, HIV Test Abuja, Malaria Treatment, Antenatal Clinic, Blood Test Center Abuja, Vaccination Center, Blood Pressure Check, Medical Laboratory Abuja, Medication Dispensary, Health Checkup, Medical Consultation, Hospital Near Me, Clinics in Abuja",
 
   openGraph: {
     title: "Barcruse Outpatient Clinic – Expert Medical & Eye Care in Abuja",
     description:
-      "Located in Wuse 2, Abuja, Barcruse Clinic offers trusted outpatient services including medical consultation, eye clinic, dental clinic, medical laboratory diagnostics, and a fully stocked dispensary, all delivered with a commitment to quality care and patient well-being.",
-    url: "https://barcruse.netlify.app/",
+      "Located in Abuja, Barcruse Clinic offers trusted outpatient services including medical consultation, eye clinic, dental clinic, medical laboratory diagnostics, and a fully stocked dispensary, all delivered with a commitment to quality care and patient well-being.",
+    url: "https://barcruseoutpatientclinic.com/",
     siteName: "Barcruse Outpatient Clinic",
     images: [
       {
-        url: "https://barcruse.netlify.app/pic57.png",
+        url: "https://barcruseoutpatientclinic.com/pic57.png",
         width: 1200,
         height: 630,
         alt: "Barcruse Clinic – Eye Tests, Dental Work, HIV & Lab Testing in Abuja",
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Barcruse Outpatient Clinic – Eye, Dental & Medical Services",
     description:
-      "From glasses prescriptions to blood tests, Barcruse Clinic offers complete outpatient care in Wuse 2, Abuja. Visit for medical consultation, dental care, HIV testing, malaria treatment & more.",
-    images: ["https://barcruse.netlify.app/pic57.png"],
+      "From glasses prescriptions to blood tests, Barcruse Clinic offers complete outpatient care, Abuja. Visit for medical consultation, dental care, HIV testing, malaria treatment & more.",
+    images: ["https://barcruseoutpatientclinic.com/pic57.png"],
   },
 };
 

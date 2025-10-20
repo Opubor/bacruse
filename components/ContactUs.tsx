@@ -94,12 +94,13 @@ async function ContactUs() {
             </Link>
           </div>
         </div>
-        <div className="w-96 lg:w-6/12">
+        <div className="w-full lg:w-6/12 aspect-video overflow-hidden rounded-2xl">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.895449222877!2d7.4773390000000015!3d9.0732888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b3817191275%3A0x1480cb836c364fe6!2sBARCRUSE%20VISION!5e0!3m2!1sen!2sng!4v1750444586247!5m2!1sen!2sng"
-            width="600"
-            height="450"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.3332971456707!2d7.475191799999999!3d9.0333296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b110cb0be53%3A0x662749c920747d02!2sBARCRUSE%20OUTPATIENT%20CLINIC!5e0!3m2!1sen!2sil!4v1760987254447!5m2!1sen!2sil"
+            className="w-full h-full border-0"
+            // allowFullScreen=""
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </div>

@@ -13,15 +13,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Barcruse Outpatient Clinic – Medical, Dental & Eye Care in Abuja",
+  title: "Barcruse | Outpatient Clinic for Medical, Dental & Eye Care in Abuja",
   description:
     "Barcruse Outpatient Clinic, Abuja offers expert care in general consultation, eye tests, glasses prescriptions, dental treatments, HIV testing, blood work, malaria diagnosis, antenatal services, and a full dispensary for medications.",
   icons: "/logo1.png",
   keywords:
-    "Barcruse Clinic Abuja, Hospital, Eye Clinic Abuja, Glasses Prescription Abuja, Dental Clinic Abuja, Tooth Extraction, Dental Cleaning, HIV Test Abuja, Malaria Treatment, Antenatal Clinic, Blood Test Center Abuja, Vaccination Center, Blood Pressure Check, Medical Laboratory Abuja, Medication Dispensary, Health Checkup, Medical Consultation, Hospital Near Me, Clinics in Abuja",
+    "Barcruse, Barcruse Clinic Abuja, Hospital, Eye Clinic Abuja, Glasses Prescription Abuja, Dental Clinic Abuja, Tooth Extraction, Dental Cleaning, HIV Test Abuja, Malaria Treatment, Antenatal Clinic, Blood Test Center Abuja, Vaccination Center, Blood Pressure Check, Medical Laboratory Abuja, Medication Dispensary, Health Checkup, Medical Consultation, Hospital Near Me, Clinics in Abuja",
 
   openGraph: {
-    title: "Barcruse Outpatient Clinic – Expert Medical & Eye Care in Abuja",
+    title:
+      "Barcruse | Outpatient Clinic for Medical, Dental & Eye Care in Abuja",
     description:
       "Located in Abuja, Barcruse Clinic offers trusted outpatient services including medical consultation, eye clinic, dental clinic, medical laboratory diagnostics, and a fully stocked dispensary, all delivered with a commitment to quality care and patient well-being.",
     url: "https://barcruseoutpatientclinic.com/",
@@ -40,7 +41,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Barcruse Outpatient Clinic – Eye, Dental & Medical Services",
+    title:
+      "Barcruse | Outpatient Clinic for Medical, Dental & Eye Care in Abuja",
     description:
       "From glasses prescriptions to blood tests, Barcruse Clinic offers complete outpatient care, Abuja. Visit for medical consultation, dental care, HIV testing, malaria treatment & more.",
     images: ["https://barcruseoutpatientclinic.com/pic57.png"],

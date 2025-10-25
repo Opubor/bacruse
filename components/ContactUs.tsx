@@ -68,30 +68,41 @@ async function ContactUs() {
             {contactInformation?.at(0)?.openingHours || "/"}
           </p>
           <div className="mt-8 flex justify-start items-center gap-4">
-            <Link
-              href={contactInformation?.at(0)?.facebookUrl! || "/"}
-              target="blank"
-            >
-              <FaFacebook className="text-xl" />
-            </Link>
-            <Link
-              href={contactInformation?.at(0)?.twitterUrl! || "/"}
-              target="blank"
-            >
-              <FaSquareXTwitter className="text-xl" />
-            </Link>
-            <Link
-              href={contactInformation?.at(0)?.instagramUrl! || "/"}
-              target="blank"
-            >
-              <FaInstagramSquare className="text-xl" />
-            </Link>
-            <Link
-              href={contactInformation?.at(0)?.tiktokUrl! || "/"}
-              target="blank"
-            >
-              <AiFillTikTok className="text-xl" />
-            </Link>
+            {contactInformation?.at(0)?.facebookUrl && (
+              <Link
+                href={contactInformation?.at(0)?.facebookUrl! || "/"}
+                target="blank"
+              >
+                <FaFacebook className="text-xl" />
+              </Link>
+            )}
+
+            {contactInformation?.at(0)?.twitterUrl && (
+              <Link
+                href={contactInformation?.at(0)?.twitterUrl! || "/"}
+                target="blank"
+              >
+                <FaSquareXTwitter className="text-xl" />
+              </Link>
+            )}
+
+            {contactInformation?.at(0)?.instagramUrl && (
+              <Link
+                href={contactInformation?.at(0)?.instagramUrl! || "/"}
+                target="blank"
+              >
+                <FaInstagramSquare className="text-xl" />
+              </Link>
+            )}
+
+            {contactInformation?.at(0)?.tiktokUrl && (
+              <Link
+                href={contactInformation?.at(0)?.tiktokUrl! || "/"}
+                target="blank"
+              >
+                <AiFillTikTok className="text-xl" />
+              </Link>
+            )}
           </div>
         </div>
         <div className="w-full lg:w-6/12 aspect-video overflow-hidden rounded-2xl">

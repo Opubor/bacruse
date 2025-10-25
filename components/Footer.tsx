@@ -139,31 +139,41 @@ async function Footer() {
             SOCIALS
           </h1>
           <div className="mt-4 flex justify-center items-center gap-4">
-            <Link
-              href={contactInformation?.at(0)?.facebookUrl! || "/"}
-              target="blank"
-            >
-              <FaFacebook className="text-xl" />
-            </Link>
-            <Link
-              href={contactInformation?.at(0)?.twitterUrl! || "/"}
-              target="blank"
-            >
-              <FaSquareXTwitter className="text-xl" />
-            </Link>
-            <Link
-              href={contactInformation?.at(0)?.instagramUrl! || "/"}
-              target="blank"
-            >
-              <FaInstagramSquare className="text-xl" />
-            </Link>
+            {contactInformation?.at(0)?.facebookUrl && (
+              <Link
+                href={contactInformation?.at(0)?.facebookUrl! || "/"}
+                target="blank"
+              >
+                <FaFacebook className="text-xl" />
+              </Link>
+            )}
 
-            <Link
-              href={contactInformation?.at(0)?.tiktokUrl || "/"}
-              target="blank"
-            >
-              <AiFillTikTok className="text-xl" />
-            </Link>
+            {contactInformation?.at(0)?.twitterUrl && (
+              <Link
+                href={contactInformation?.at(0)?.twitterUrl! || "/"}
+                target="blank"
+              >
+                <FaSquareXTwitter className="text-xl" />
+              </Link>
+            )}
+
+            {contactInformation?.at(0)?.instagramUrl && (
+              <Link
+                href={contactInformation?.at(0)?.instagramUrl! || "/"}
+                target="blank"
+              >
+                <FaInstagramSquare className="text-xl" />
+              </Link>
+            )}
+
+            {contactInformation?.at(0)?.tiktokUrl && (
+              <Link
+                href={contactInformation?.at(0)?.tiktokUrl || "/"}
+                target="blank"
+              >
+                <AiFillTikTok className="text-xl" />
+              </Link>
+            )}
           </div>
 
           <div className="mt-8 flex justify-start gap-2 pt-2 lg:pt-0">

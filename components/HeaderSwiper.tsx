@@ -18,9 +18,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const backgroundImages = [
-  { img: "/pic16.jpg" },
-  { img: "/pic22.jpg" },
-  { img: "/pic23.jpg" },
+  { img: "/pic58.webp" },
+  { img: "/pic59.webp" },
+  { img: "/pic60.webp" },
 ];
 
 function HeaderSwiper() {

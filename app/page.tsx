@@ -31,10 +31,10 @@ export default function Home() {
 
       <OurMission />
 
-      <div className="bg-darkblue py-4 w-full flex justify-center">
+      <div className="py-4 w-full flex justify-center">
         <Link
           href={"/about-us"}
-          className="bg-white px-16 py-4 rounded-full hover:bg-lightblue text-sm"
+          className="bg-white px-16 py-4 rounded-full hover:bg-lightblue text-sm shadow-lg shadow-gray-300 border"
         >
           Learn More About Us
         </Link>
